@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1171.551" height="368.725" viewBox="0 0 1171.551 368.725">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_2" data-name="長方形 2" width="1171.551" height="368.725" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="長方形_1" data-name="長方形 1" width="1171.362" height="821.354" transform="translate(1171.362 821.354) rotate(-180)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.004" y1="0.5" x2="1.004" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.1" stop-color="#003890"/>
+      <stop offset="0.204" stop-color="#0a4287"/>
+      <stop offset="0.382" stop-color="#265d70"/>
+      <stop offset="0.615" stop-color="#53894b"/>
+      <stop offset="0.858" stop-color="#8abf1f"/>
+    </linearGradient>
+  </defs>
+  <g id="header-parts_pc" clip-path="url(#clip-path)">
+    <g id="グループ_2" data-name="グループ 2" transform="translate(0.124)" clip-path="url(#clip-path-2)">
+      <g id="グループ_1" data-name="グループ 1" transform="translate(-28.672 -238.407)">
+        <path id="パス_1" data-name="パス 1" d="M508.92-41.03-14.858,335.952V-38.876Z" transform="translate(34.396 251.303)" fill="#fff"/>
+        <path id="パス_2" data-name="パス 2" d="M1230.967-126.761C236.012-108.039-44.743,273.9-44.743,273.9S19.289.551,1009.319-362.663Z" transform="translate(44.743 362.663)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

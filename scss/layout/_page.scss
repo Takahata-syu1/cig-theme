@@ -1,0 +1,48 @@
+.page__content {
+    &__fv-page {
+        text-align: center;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 1) 100%);
+
+        .title {
+            font-size: clamp(2.0rem, 2.7vw, 4.0rem);
+            font-weight: 600;
+            margin: min(80px, 6vw);
+            line-height: normal;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 90%;
+        }
+
+        &__text {
+            margin-top: max(-116px, -7.6%);
+            padding: 0 4vw 32px;
+
+            .sub-title {
+                font-size: clamp(2.0rem, 3vw, 3.2rem);
+                color: #fff;
+                line-height: normal;
+                margin-bottom: 24px;
+            }
+
+            .heading {
+                display: inline-block;
+
+                .En {
+                    font-size: clamp(4.8rem, 6.4vw, 12rem);
+                    color: #fff;
+                    line-height: 0.9em;
+                }
+
+                h4 {
+                    font-size: min(1.6rem, 2rem);
+                    color: #000;
+                    display: block;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

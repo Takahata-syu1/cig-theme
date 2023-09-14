@@ -1,0 +1,481 @@
+.pg-about {
+    padding: 0 6vw 88px;
+
+    &__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        &__lead {
+            font-size: clamp(1.6rem, 2vw, 2.4rem);
+            margin: 88px 0;
+            line-height: 1.8em;
+            text-align: center;
+
+            @include sp {
+                margin: 48px 0;
+            }
+        }
+
+        &__listcontent {
+            .heading {
+                position: relative;
+                border-bottom: solid 2px;
+                margin-bottom: 56px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -2px;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #707070;
+                    box-shadow: 0px 0px 17px 2px #888;
+                }
+
+                .inner {
+                    margin: 0 auto;
+                    overflow: hidden;
+                    z-index: 1;
+                    position: relative;
+                    background-color: #fff;
+
+                    @include sp {
+                        overflow: unset;
+                    }
+
+                    .inner-inner {
+                        max-width: 980px;
+                        margin: 0 auto;
+
+                        .label {
+                            position: relative;
+                            display: inline-block;
+                            padding: 12px 56px 12px 32px;
+                            background: rgb(138, 191, 31);
+                            background: linear-gradient(90deg, rgba(138, 191, 31, 1) 0%, rgba(0, 87, 135, 1) 82%);
+                            border-left: solid 22px #215fab;
+
+                            @include sp {
+                                padding: 6px 24px 6px 24px;
+                                border-left: solid 10px #215fab;
+                            }
+
+                            h4 {
+                                position: relative;
+                                z-index: 2;
+                                color: #fff;
+                                font-size: clamp(1.6rem, 2vw, 2.4rem);
+                                line-height: normal;
+                            }
+
+                            &::before,
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                z-index: 1;
+                                top: 0;
+                                width: 80px;
+                                height: 100%;
+                                clip-path: polygon(0 0, 50% 0, 100% 100%, 50% 100%);
+
+                                @include sp {
+                                    width: 40px
+                                }
+                            }
+
+
+                            &::before {
+                                right: -40px;
+                                background-color: #005787;
+
+                                @include sp {
+                                    right: -20px;
+                                }
+                            }
+
+
+                            &::after {
+                                right: -67px;
+                                background-color: #96cf2b;
+
+                                @include sp {
+                                    right: -40px;
+                                }
+                            }
+                        }
+
+                        .label-option {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            display: flex;
+                            align-items: center;
+                            right: 20%;
+
+                            @include tab {
+                                right: 4vw;
+                                bottom: -75px;
+                            }
+
+                            &.lage-text {
+                                span {
+                                    font-size: clamp(2.0rem, 2vw, 2.4rem);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content {
+                margin-bottom: 88px;
+
+                &.plice {
+                    font-size: clamp(2.0rem, 3vw, 2.4rem);
+                }
+
+                .item {
+                    display: flex;
+                    max-width: 765px;
+                    margin: 0 auto;
+                    justify-content: space-between;
+                    margin-bottom: 40px;
+
+                    @include sp {
+                        display: block;
+                        border-bottom: solid 1px #e0e0e0;
+                        padding-bottom: 8px;
+
+                        .text-2 {
+                            text-align: right;
+                        }
+                    }
+
+
+                }
+            }
+
+            .pt-simu-mem {
+                @include background-image ("pg-img/golf-zoom-img.jpg");
+                margin-bottom: 140px;
+                position: relative;
+                padding: 72px 4vw;
+
+                &::after {
+                    content: "";
+                    position: fixed;
+                    top: 0;
+                    height: 100vh;
+                    left: 0;
+                    right: 0;
+                    z-index: -1;
+                    @include background-image ("pg-img/golf-zoom-img.jpg");
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+
+                &__content {
+                    border: solid 1px #000;
+                    width: min(80vw, 526px);
+                    background-color: #fff;
+                    margin: 0 auto;
+                    position: relative;
+                    z-index: 1;
+                    text-align: center;
+                    padding: 16px;
+
+                    p {
+                        font-size: clamp(2.0rem, 3vw, 2.8rem);
+                        margin-bottom: 16px;
+                        line-height: 1.6em;
+                        letter-spacing: 0.1em;
+                    }
+
+                    >img {
+                        position: absolute;
+                        top: -71px;
+                        right: -24px;
+
+                        @include sp {
+                            top: -56px;
+                            right: -24px;
+                            width: 90px;
+                        }
+                    }
+                }
+
+                >img {
+                    position: absolute;
+                    right: -124px;
+                    bottom: -66px;
+                }
+            }
+
+            .time-schedule-container {
+                position: relative;
+                margin-bottom: 140px;
+
+                >img {
+                    position: absolute;
+                    top: -40px;
+                    left: -191px;
+
+                    @include sp {
+                        top: 25px;
+                        left: -226px;
+                    }
+                }
+            }
+
+            .time-schedule {
+                margin-bottom: 96px;
+
+                &__inner {
+                    display: flex;
+                    gap: 0 14px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    &__item {
+                        width: 256px;
+                        text-align: center;
+                        border: solid 1px #000;
+                        margin-bottom: 16px;
+
+                        .text-1 {
+                            position: relative;
+                            background-color: #000;
+                            color: #fff;
+                            padding: 16px 8px;
+
+                            img {
+                                position: absolute;
+                                display: block;
+                                top: 6px;
+                                right: 10px;
+                            }
+                        }
+
+                        .text-2 {
+                            position: relative;
+                            padding: 16px 8px;
+                        }
+                    }
+                }
+            }
+
+            .time-schedule-mem {
+                @include background-image ("pg-img/golf-zoom-img.jpg");
+                margin-bottom: 140px;
+                position: relative;
+                padding: 72px 4vw;
+                background-size: cover;
+
+                @include sp {
+                    padding: 32px 4vw;
+                }
+
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 16px;
+                    margin: 0 auto 16px;
+                    border-bottom: solid 1px #000;
+                    gap: 0 40px;
+                    max-width: 800px;
+
+                    @include sp {
+                        display: block;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .text-1 {
+                        min-width: 228px;
+                        font-size: clamp(1.6rem, 2vw, 2.4rem);
+                        color: #fff;
+                        padding: 12px 16px 12px 16px;
+                        background: linear-gradient(90deg, rgb(138, 191, 31) 0%, rgb(0, 87, 135) 82%);
+                        border-left: solid 10px #469646;
+                        letter-spacing: 0.1em;
+
+                        @include sp {
+                            margin-bottom: 16px;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .discount-container {
+            margin-bottom: 88px;
+            position: relative;
+
+            .discount {
+                margin-bottom: 56px;
+
+                &__inner {
+                    display: flex;
+                    gap: 0 14px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+
+                    &__item {
+                        width: 302px;
+                        text-align: center;
+                        border-radius: 13px;
+                        overflow: hidden;
+                        margin-bottom: 24px;
+
+                        .dis-title {
+                            position: relative;
+                            height: 67px;
+                            display: flex;
+                            align-items: center;
+
+                            color: #fff;
+                            justify-content: center;
+
+                            p {
+                                font-size: 2.4rem;
+                                letter-spacing: 0.1em;
+                            }
+
+                            img {
+                                position: absolute;
+                                display: block;
+                                top: 6px;
+                                right: 10px;
+                            }
+                        }
+
+                        .dis-content {
+                            padding: 10px 24px;
+                            box-sizing: border-box;
+                            display: flex;
+                            align-items: center;
+                            min-height: 200px;
+                            height: 74%;
+
+                            .inner {
+                                width: 100%;
+
+                                >small {
+                                    margin: 8px 0;
+                                    display: block;
+                                }
+
+                                .discount-desc {
+                                    >div {
+                                        margin-bottom: 8px;
+                                        font-size: 5.8rem;
+
+                                        small {
+                                            font-size: 50%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &__item--green {
+                        border: solid 1px #8ABF1F;
+
+                        .dis-title {
+                            background-color: #8ABF1F;
+                        }
+
+                        .dis-content {
+                            .inner {
+                                >small {
+                                    background-color: #DCECBC;
+                                    color: #8ABF1F;
+                                }
+
+                                .discount-desc {
+                                    div {
+                                        color: #8ABF1F;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &__item--blue {
+                        border: solid 1px #003893;
+
+                        .dis-title {
+                            background-color: #003893;
+                        }
+
+                        .dis-content {
+                            .inner {
+
+                                >small {
+                                    background-color: #B5C5DF;
+                                    color: #003893;
+                                }
+
+                                .discount-desc {
+                                    div {
+                                        color: #003893;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &__item--yellow {
+                        border: solid 1px #E6CB3C;
+
+                        .dis-title {
+                            background-color: #E6CB3C;
+                        }
+
+                        .dis-content {
+                            .inner {
+                                >small {
+                                    background-color: #F7EEC4;
+                                    color: #E6CB3C;
+                                }
+
+                                .discount-desc {
+                                    div {
+                                        color: #E6CB3C;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+
+
+                }
+            }
+
+            .others {
+                border-top: 1px dashed #000000;
+                text-align: center;
+                padding-top: 32px;
+                position: relative;
+            }
+
+            >img {
+                position: absolute;
+                right: -124px;
+                bottom: -66px;
+            }
+        }
+    }
+
+
+}

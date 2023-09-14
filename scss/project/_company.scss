@@ -1,0 +1,179 @@
+.company {
+
+
+    &__inner {
+
+        &__message {
+            margin: 0 auto 88px;
+            padding: 0 6vw 0;
+
+            &__body {
+                img {
+                    display: block;
+                    margin: 0 auto 88px;
+
+                    @include sp {
+                        margin-bottom: 40px;
+                    }
+                }
+
+                &__content {
+                    gap: 56px;
+                    max-width: 910px;
+                    margin: 0 auto 88px;
+
+                    @include tab {
+                        gap: 32px;
+                    }
+
+                    @include sp {
+                        display: block;
+                    }
+
+                    .text-box {
+                        margin-top: 24px;
+                        line-height: 2.4em;
+                        max-width: 50%;
+
+                        @include sp {
+                            max-width: unset;
+                        }
+
+                        p {
+                            margin-bottom: 32px;
+
+                            @include sp {
+                                @include sp {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+
+                        span {
+                            display: block;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__about {
+            background-color: #E5EBF4;
+            padding: 120px 6vw 0;
+
+            &__section {
+                max-width: 910px;
+                margin: 0 auto 80px;
+                background-color: #fff;
+                padding: 88px 6vw;
+                box-sizing: border-box;
+
+                @include sp {
+                    padding: 40px 6vw;
+                }
+
+                .BN-title-outer {
+                    h3 {
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            bottom: 20px;
+
+                            @include sp {
+                                height: 108px;
+                                bottom: 27px;
+                                width: auto;
+                            }
+                        }
+                    }
+
+                    &--y-left {
+                        img {
+                            left: -120px;
+
+                            @include sp {
+                                left: -66px;
+                            }
+                        }
+                    }
+
+                    &--y-right {
+                        img {
+                            right: -110px;
+
+                            @include sp {
+                                right: -66px;
+                            }
+                        }
+                    }
+
+                }
+
+                .content {
+                    text-align: center;
+
+                    >p {
+                        font-size: clamp(1.6rem, 2vw, 2rem);
+                        display: inline-block;
+                        text-align: left;
+                        line-height: 2.4em;
+                    }
+
+                    table {
+                        width: 100%;
+
+                        th,
+                        td {
+                            border-bottom: solid 1px #E3E3E3;
+                            font-weight: normal;
+                            padding: 16px 8px;
+
+                            @include sp {
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        th {
+                            width: 30%;
+                        }
+
+                        td {
+                            text-align: left;
+                        }
+                    }
+
+                    .map-box {
+                        text-align: center;
+
+                        >img {
+                            display: block;
+                            margin: 0 auto 40px;
+                        }
+
+                        a {
+                            margin: 0 auto 56px;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+
+        .green-obje {
+            margin: -276px auto auto;
+            display: block;
+
+            @include tab {
+                margin: -215px auto auto;
+            }
+
+            @include sp {
+                margin: -124px auto auto;
+            }
+        }
+    }
+}

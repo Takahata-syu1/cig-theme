@@ -1,0 +1,268 @@
+// ページのヘッダー調整
+.page-template {
+    header {
+        border-bottom: 10px solid #c21500;
+        border-image: linear-gradient(to right, #8abf1f 0%, #003890 100%);
+        border-image-slice: 1;
+        box-shadow: 0px 0px 39px 6px #777777;
+        padding-bottom: 24px;
+
+        @include tab {
+            padding-bottom: 0px;
+            height: 100px;
+        }
+
+        .header__nav-wrap {
+            .inner {
+                .nav {
+                    padding-top: 96px;
+                }
+            }
+        }
+    }
+}
+
+// footer上部の予約フォームのリンクボタン
+.reservation-wrapper {
+    background-color: #000;
+    padding: 72px 0;
+    border-bottom: solid 7px #003890;
+    position: relative;
+
+    @include sp {
+        padding: 32px 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include background-image("burger-nav-reservation-bg-pc.png");
+
+        @include sp {
+            @include background-image("burger-nav-reservation-bg-sp.png");
+        }
+
+    }
+
+    a {
+        position: relative;
+        z-index: 2;
+        width: 440px;
+        border: 2px solid #c21500;
+        border-image: linear-gradient(to right, #8abf1f 0%, #003890 100%);
+        border-image-slice: 1;
+        display: block;
+        margin: 0 auto;
+        font-size: 2.4rem;
+        color: #fff;
+        padding: 24px;
+        text-align: center;
+
+        @include sp {
+            width: 240px;
+            font-size: 1.6rem;
+            padding: 12px;
+        }
+
+        &:hover {
+
+            background: linear-gradient(119deg, rgba(138, 191, 31, 1) 0%, rgba(0, 56, 144, 1) 100%);
+
+        }
+    }
+}
+
+// 英字のミドルタイトル パターン1
+.BN-title-outer {
+    text-align: center;
+
+    .BN-title-p1 {
+        display: inline-block;
+        color: #484848;
+        margin-bottom: 72px;
+        text-align: left;
+        mix-blend-mode: multiply;
+
+        @include sp {
+            margin-bottom: 32px;
+        }
+
+        .En {
+            font-size: clamp(3rem, 12vw, 9rem);
+            display: block;
+            line-height: 0.9;
+            border-bottom: solid 8px #484848;
+            margin-bottom: 4px;
+        }
+
+        .Ja {
+            font-size: 2.0rem;
+            display: block;
+            text-align: right;
+
+            @include sp {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+// 英字のミドルタイトル パターン2
+
+.img-text-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 56px;
+    margin-bottom: 96px;
+
+    @include sp {
+        display: block;
+    }
+
+    .BN-title-p2 {
+        display: inline-block;
+        color: #484848;
+
+        .En {
+            font-size: clamp(8rem, 10vw, 15rem);
+            display: inline-block;
+            line-height: 0.9;
+            margin-bottom: 4px;
+            mix-blend-mode: multiply;
+
+            small {
+                font-size: clamp(4.8rem, 6vw, 7.6rem);
+                display: block;
+            }
+        }
+
+        .Ja {
+            margin-bottom: 24px;
+            font-family: 'Noto Serif JP', serif;
+            font-size: 1.6rem;
+            display: block;
+            text-align: center;
+            color: #fff;
+            background-color: #5A5A5A;
+            padding: 4px 8px;
+            mix-blend-mode: multiply;
+
+            @include sp {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    @include tab {
+        gap: 0 24px;
+    }
+
+    figure {
+        max-width: 50%;
+
+        @include sp {
+            max-width: unset;
+        }
+
+        img {
+            width: 100%;
+
+        }
+    }
+
+    @include sp {
+        display: block;
+
+        p {
+            margin-bottom: 16px;
+        }
+    }
+
+
+
+}
+
+// 英字のミドルタイトル パターン3
+.BN-title-outer {
+    text-align: center;
+
+    .BN-title-p3 {
+        display: inline-block;
+        color: #484848;
+        margin-bottom: 72px;
+        text-align: left;
+        mix-blend-mode: multiply;
+
+        @include sp {
+            margin-bottom: 32px;
+        }
+
+        .En {
+            font-size: clamp(3rem, 10vw, 8.3rem);
+            display: block;
+            line-height: 0.9;
+            margin-bottom: 4px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 512px;
+                height: 8px;
+                left: 50%;
+                bottom: 0;
+                transform: translate(-50%, 0%);
+                background-color: #484848;
+
+                @include sp {
+                    height: 4px;
+                    width: 70vw;
+                }
+            }
+
+
+        }
+
+        .Ja {
+            font-size: 2.0rem;
+            display: block;
+            text-align: right;
+
+            @include sp {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+.map-link {
+    display: inline-block;
+    border: 2px solid #c21500;
+    border-image: linear-gradient(to right, #8abf1f 0%, #003890 100%);
+    border-image-slice: 1;
+    width: 248px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+
+
+    span {
+        display: inline-block;
+        margin-right: 16px;
+    }
+
+    img {
+        transition: all 1s ease;
+        position: relative;
+    }
+
+    &:hover {
+        img {
+            transform: translateX(20px);
+        }
+    }
+}

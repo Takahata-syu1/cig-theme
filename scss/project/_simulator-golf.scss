@@ -1,0 +1,218 @@
+.sts-about {
+    padding: 0 6vw 88px;
+    @include background-image("sand-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+
+
+
+    &__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        &__lead {
+            font-size: clamp(1.6rem, 2vw, 2.4rem);
+            margin: 88px 0;
+            line-height: 1.8em;
+            text-align: center;
+
+            @include sp {
+                margin: 48px 0;
+            }
+        }
+
+        &__img-box {
+            display: flex;
+            gap: 0 16px;
+            justify-content: space-between;
+            margin-bottom: 96px;
+
+        }
+
+
+
+        .st-pack {
+            &__tilt-outer {
+                position: relative;
+                text-align: center;
+
+                >img {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-0%, -70%);
+
+                    @include sp {
+                        display: none;
+                    }
+                }
+            }
+
+            &__content {
+                display: flex;
+                gap: 46px 46px;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                @include sp {
+                    gap: 16px;
+                }
+
+                &__item {
+                    img {
+                        display: block;
+                    }
+
+                    span {
+                        color: #fff;
+                        background-color: #010101;
+                        padding: 6px;
+                        font-size: 1.6rem;
+                        display: block;
+                        text-align: center;
+                    }
+
+                    >div {
+                        padding: 16px;
+                        text-align: center;
+                        background-color: #fff;
+                        min-height: 124px;
+
+                        @include sp {
+                            height: auto;
+                        }
+
+                        p {
+                            font-size: 1.4rem;
+                            max-width: 270px;
+                            display: inline-block;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ssp-about {
+    background-color: #4995B5;
+    padding: 0 6vw 88px;
+
+    >figure {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        .real-green {
+            margin-bottom: 64px;
+
+            @include sp {
+                margin-bottom: 32px;
+            }
+        }
+
+        .put-simu {
+            text-align: center;
+
+            &__warp {
+                &__heading {
+                    font-size: clamp(1.6rem, 2vw, 2.4rem);
+                    border: solid 1px #080404;
+                    margin-bottom: 40px;
+                    padding: 12px 0;
+                }
+
+                &__content {
+                    margin-bottom: 88px;
+
+                    &.iroha-wrap {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 20px 60px;
+
+                        @include sp {
+                            display: block;
+                        }
+
+                        .list-content {
+                            .title {
+                                color: #fff;
+                                @include background-image("sts-img/sts-put_sim-img-1.png");
+                                background-size: 312px;
+                                width: 312px;
+                                height: 87px;
+                                font-size: 2.4rem;
+                                position: relative;
+                                margin-bottom: 16px;
+
+                                span {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    right: 0;
+                                    transform: translate(0%, -50%);
+                                }
+                            }
+
+                            ul {
+                                text-align: left;
+
+                                li {
+                                    color: #fff;
+                                    margin-bottom: 20px;
+                                    line-height: 2em;
+
+                                    .item-tilt {
+                                        font-size: 2.0rem;
+                                        text-decoration: underline;
+
+                                        @include sp {
+                                            font-size: 1.6rem;
+                                        }
+                                    }
+
+                                    .item-desc {
+                                        font-size: 1.6rem;
+
+                                        @include sp {
+                                            font-size: 1.4rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.mode-wrap {
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        gap: 24px 16px;
+
+                        .item {
+                            img {
+                                display: block;
+                            }
+
+                            p {
+                                color: #fff;
+                                background-color: #010101;
+                                text-align: center;
+                                padding: 6px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
